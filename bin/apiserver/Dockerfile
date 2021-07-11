@@ -21,5 +21,7 @@ RUN apt-get update && apt-get install -y \
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Set entrypoint as run.sh
-ENTRYPOINT [ "/app/run.sh" ]
+# Runs app.py
+ENV FLASK_APP /app/app.py
+ENV FLASK_RUN_HOST 0.0.0.0
+CMD ["flask", "run"]
