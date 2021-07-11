@@ -1,5 +1,4 @@
 """
- * Project name: Sample Python Flask
  * File name : app.py
  * Author : Sashwat K <sashwat0001@gmail.com>
  * Last updated : 11 Jul 2021
