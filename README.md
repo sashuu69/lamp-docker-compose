@@ -4,10 +4,10 @@
 
 This repository can be used to host LAMP (Linux, Apache, Mariadb, PHP) server using docker compose. The docker images used for building LAMP stack are:-
 
-1. php:7.4-apache
-2. python:3.8.2
-3. mariadb:10.5.1-bionic
-4. phpmyadmin/phpmyadmin
+1. Web server - php:7.4-apache
+2. API server - python:3.8.2
+3. Database - mariadb:10.5.1-bionic
+4. PHPMyAdmin - phpmyadmin/phpmyadmin
 
 ## Instructions
 
