@@ -40,6 +40,11 @@ This repository can be used to host LAMP (Linux, Apache, Mariadb, PHP) server us
 
 ![lamp-architecture](docs/architecture.jpg)
 
+## Folder Structure
+
+1. API source code - bin/apiserver/code
+2. Webserver source code - bin/webserver/code
+
 ## Contributors
 
 1. Sashwat K sashwat0001@gmail.com
