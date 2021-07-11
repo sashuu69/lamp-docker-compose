@@ -42,8 +42,42 @@ This repository can be used to host LAMP (Linux, Apache, Mariadb, PHP) server us
 
 ## Folder Structure
 
-1. API source code - bin/apiserver/code
-2. Webserver source code - bin/webserver/code
+```
+lamp-docker-compose
+ ┣ bin // Docker binaries
+ ┃ ┣ apiserver
+ ┃ ┃ ┣ code // Python API code
+ ┃ ┃ ┃ ┣ app.py
+ ┃ ┃ ┃ ┗ requirements.txt
+ ┃ ┃ ┗ Dockerfile
+ ┃ ┣ mysql
+ ┃ ┃ ┗ Dockerfile
+ ┃ ┣ phpmyadmin
+ ┃ ┃ ┗ Dockerfile
+ ┃ ┗ webserver // HTML/PHP code
+ ┃ ┃ ┣ code
+ ┃ ┃ ┃ ┗ index.php
+ ┃ ┃ ┗ Dockerfile
+ ┣ config // webserver configs
+ ┃ ┣ apache2
+ ┃ ┃ ┗ apache2.conf
+ ┃ ┣ php
+ ┃ ┃ ┗ php.ini
+ ┃ ┗ vhosts
+ ┃ ┃ ┗ default.conf
+ ┣ data // Generated data
+ ┃ ┗ .gitkeep
+ ┣ docs
+ ┃ ┣ architecture.drawio
+ ┃ ┗ architecture.jpg
+ ┣ logs // Generated logs
+ ┃ ┗ .gitkeep
+ ┣ .gitignore
+ ┣ LICENSE
+ ┣ README.md
+ ┣ docker-compose.yaml
+ ┗ sample_env // Sample env file
+```
 
 ## Contributors
 
